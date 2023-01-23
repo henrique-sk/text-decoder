@@ -1,9 +1,18 @@
 * {
+  margin: 0;
+  padding: 0;
+	border: 0;
   background: #f3f5fc;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 32px;
   line-height: 150%;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .logo-alura {
@@ -88,4 +97,17 @@ main {
 .information {
   color: #495057;
   font-size: 18px;
+}
+
+footer {
+  color: #ffffff;
+  background-color: #0a3871;
+  padding: 15px 0;
+}
+
+p {
+  background-color: transparent;
+  line-height: normal;
+  font-size: 16px;
+  text-align: center;
 }
