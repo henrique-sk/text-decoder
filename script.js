@@ -10,6 +10,7 @@ let codeArray = [
 ];
 
 function btnDecrypter(role) {
+  document.getElementById("image").style.backgroundImage = "none";
   const textString = decrypter(role, textArea.value);
   message.value = textString;
   textArea.value = "";
