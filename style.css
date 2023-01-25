@@ -11,19 +11,44 @@
 
 body {
   min-height: 100vh;
+  /* width: 940px; */
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 0 1fr auto;
+}
+
+header {
+  
 }
 
 .logo-alura {
   margin: 0 0 0 10px;
   padding: 10px 0 0;
   width: 2%;
+  position: relative;
 }
 
 main {
-  display: flex;
-  margin: 0 0 50px 80px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-self: end;
+  /* justify-items: end; */
+  /* min-width: 1500px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* padding: 1em; */
+  /* grid-template-columns: 60% 30%; */
+  /* margin: 0 0 50px 80px; */
+}
+
+.text-input {
+  /* display: grid; */
+  /* width: 70%; */
+}
+
+.text-output {
+  display: grid;
+  flex-direction: column;
+  /* width: 30%; */
 }
 
 .text-area {
@@ -48,9 +73,12 @@ main {
   border: none;
   border-radius: 24px;
   /* color: #0a3871; */
-  margin: 20px 0 0 98px;
-  padding: 0 0 0 20px;
-  position: fixed;
+  /* margin: 20px 0 0 98px; */
+  /* padding: 0 0 0 20px; */
+  /* position: fixed; */
+  height: 80%;
+  display: flex;
+  flex-direction: column;
 }
 
 .message:focus {
@@ -62,36 +90,34 @@ main {
   margin: 18px 0 0;
 }
 
-.btn-decrypt {
-  background-color: #d8dfe8;
+.btn-copy, .btn-decrypt, .btn-encrypt {
   border: 1px solid #0a3871;
   border-radius: 24px;
   color: #0a3871;
   cursor: pointer;
   height: 67px;
+}
+
+.btn-decrypt {
+  background-color: #d8dfe8;
+  color: #0a3871;
   margin: 0 0 0 30px;
   width: 328px;
 }
 
 .btn-encrypt {
   background-color: #0a3871;
-  border: 1px solid #0a3871;
-  border-radius: 24px;
   color: #ffffff;
-  cursor: pointer;
-  height: 67px;
   width: 328px;
 }
 
 .btn-copy {
-  border: 1px solid #0a3871;
-  border-radius: 24px;
   color: #0a3871;
-  cursor: pointer;
-  height: 67px;
-  margin: 402px 0 0 108px;
-  position: absolute;
+  /* margin: 402px 0 0 108px; */
+  /* position: absolute; */
   width: 336px;
+  
+  
 }
 
 .information {
