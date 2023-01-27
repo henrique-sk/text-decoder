@@ -11,44 +11,32 @@
 
 body {
   min-height: 100vh;
-  /* width: 940px; */
   display: grid;
   grid-template-rows: 0 1fr auto;
 }
 
-header {
-  
-}
 
 .logo-alura {
-  margin: 0 0 0 10px;
-  padding: 10px 0 0;
+  margin: 10px 0 0 10px;
   width: 2%;
   position: relative;
 }
 
 main {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  justify-self: end;
-  /* justify-items: end; */
-  /* min-width: 1500px; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-  /* padding: 1em; */
-  /* grid-template-columns: 60% 30%; */
-  /* margin: 0 0 50px 80px; */
+  grid-template-columns: repeat(5, 1fr);
+  justify-self: center;
 }
 
 .text-input {
-  /* display: grid; */
-  /* width: 70%; */
+  grid-column: 1 / 4;
+  width: 100%;
+  margin-left: 180px;
 }
 
 .text-output {
-  display: grid;
-  flex-direction: column;
-  /* width: 30%; */
+  grid-column: 4 / 6;
+  width: 100%;
 }
 
 .text-area {
@@ -66,19 +54,20 @@ main {
   outline: none;
 }
 
+.text-output {
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: top;
+}
+
 .message {
   background: #ffffff;
   background-image: url(images/dummy.png);
   background-repeat: no-repeat;
-  border: none;
   border-radius: 24px;
-  /* color: #0a3871; */
-  /* margin: 20px 0 0 98px; */
-  /* padding: 0 0 0 20px; */
-  /* position: fixed; */
-  height: 80%;
-  display: flex;
-  flex-direction: column;
+  width: 350px;
+  height: 600px;
 }
 
 .message:focus {
@@ -113,11 +102,9 @@ main {
 
 .btn-copy {
   color: #0a3871;
-  /* margin: 402px 0 0 108px; */
-  /* position: absolute; */
+  position: absolute;
   width: 336px;
-  
-  
+  align-self: flex-end;
 }
 
 .information {
