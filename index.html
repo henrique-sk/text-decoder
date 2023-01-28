@@ -22,7 +22,7 @@
           placeholder="Enter your text"
         ></textarea>
         <div class="information">
-          <h6>Only lowercase and without accent</h6>
+          <p>Only lowercase and without accent</p>
         </div>
         <div class="buttons">
           <button class="btn-encrypt" onclick="btnDecrypter('encrypt')">
@@ -35,11 +35,13 @@
       </section>
       <section class="text-output">
           <textarea id="image" class="message" cols="20" rows="10"></textarea>
+          <span>No message found</span>
+          <span>Enter a text that you want to encrypt or decrypt in the left field.</span>
           <button class="btn-copy">Copy</button>
       </section>
     </main>
     <footer>
-      <p>Developed by Henrique SK</p>
+      <span>Developed by Henrique SK</span>
     </footer>
     <script src="script.js"></script>
   </body>
