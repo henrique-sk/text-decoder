@@ -12,18 +12,25 @@
 body {
   min-height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 0 1fr auto;
 }
 
 .logo-alura {
-  margin: 0 0 0 10px;
-  padding: 10px 0 0;
-  width: 2%;
+  margin: 10px 0 0 5%;
+  width: 30px;
+  position: relative;
 }
 
 main {
-  display: flex;
-  margin: 0 0 50px 80px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-self: center;
+}
+
+.text-input {
+  grid-column: 1 / 4;
+  width: 100%;
+  margin-left: 180px;
 }
 
 .text-area {
@@ -33,28 +40,17 @@ main {
   text-transform: lowercase;
 }
 
-::placeholder {
-  color: #0a3871;
-}
-
 .text-area:focus {
   outline: none;
 }
 
-.message {
-  background: #ffffff;
-  background-image: url(images/dummy.png);
-  background-repeat: no-repeat;
-  border: none;
-  border-radius: 24px;
-  /* color: #0a3871; */
-  margin: 20px 0 0 98px;
-  padding: 0 0 0 20px;
-  position: fixed;
+::placeholder {
+  color: #0a3871;
 }
 
-.message:focus {
-  outline: none;
+.information {
+  color: #495057;
+  font-size: 18px;
 }
 
 .buttons {
@@ -62,41 +58,77 @@ main {
   margin: 18px 0 0;
 }
 
-.btn-decrypt {
-  background-color: #d8dfe8;
+.btn-encrypt, .btn-decrypt, .btn-copy {
   border: 1px solid #0a3871;
   border-radius: 24px;
   color: #0a3871;
   cursor: pointer;
   height: 67px;
-  margin: 0 0 0 30px;
-  width: 328px;
 }
 
 .btn-encrypt {
   background-color: #0a3871;
-  border: 1px solid #0a3871;
-  border-radius: 24px;
   color: #ffffff;
-  cursor: pointer;
-  height: 67px;
   width: 328px;
 }
 
-.btn-copy {
-  border: 1px solid #0a3871;
-  border-radius: 24px;
+.btn-decrypt {
+  background-color: #d8dfe8;
   color: #0a3871;
-  cursor: pointer;
-  height: 67px;
-  margin: 402px 0 0 108px;
-  position: absolute;
-  width: 336px;
+  margin: 0 0 0 30px;
+  width: 328px;
 }
 
-.information {
+.text-output {
+  grid-column: 4 / 6;
+  width: 100%;
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: top;
+  margin: 5% 0 5% 0;
+}
+
+
+.message {
+  display: flex;
+  background: #ffffff;
+  background-image: url(images/dummy.png);
+  background-position: 50% 10%; 
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  width: 400px;
+}
+
+.message:focus {
+  outline: none;
+}
+
+.text-output span {
+  background-color: transparent;
+  position: absolute;
+  width: 336px;
   color: #495057;
+}
+
+.text-output :nth-child(2) {  
   font-size: 18px;
+  align-self: flex-end;
+  margin: 0 0 15% 0;
+}
+
+.text-output :nth-child(3) {  
+  font-size: 18px;
+  align-self: flex-end;
+  margin: 0 0 9% 0;
+}
+
+.btn-copy {
+  color: #0a3871;
+  position: absolute;
+  width: 336px;
+  align-self: flex-end;
+  margin: 0 0 40px;
 }
 
 footer {
@@ -105,9 +137,9 @@ footer {
   padding: 15px 0;
 }
 
-p {
+footer span {
   background-color: transparent;
   line-height: normal;
   font-size: 16px;
   text-align: center;
-}
+} 
