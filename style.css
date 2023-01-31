@@ -14,10 +14,17 @@ body {
   grid-template-rows: 0 1fr auto;
 }
 
-.logo-alura {
-  margin: 10px 0 0 5%;
-  width: 30px;
+header {
+  margin: 10px 0 0 5%;  
   position: relative;
+}
+
+.logo {
+  height: 45px;
+}
+
+.logo-safe {
+  margin: 0 0 0 20%;
 }
 
 main {
