@@ -41,6 +41,7 @@ main {
   flex-direction: column;
   margin: 5% 10% 5% 0;
   justify-content: top;
+  align-items: stretch;
 }
 
 textarea {
@@ -51,7 +52,7 @@ textarea {
   border: none;
   color: #0a3871;
   margin: 90px 0 0;
-  min-height: 60%;
+  min-height: 55vh;
   text-transform: lowercase;
 }
 
@@ -133,16 +134,17 @@ textarea {
 .text-output :nth-child(2) {
   font-size: 18px;
   align-self: flex-end;
-  margin: 0 0 15% 0;
+  margin: 0 0 125px 0;
 }
 
 .text-output :nth-child(3) {
   font-size: 18px;
   align-self: flex-end;
-  margin: 0 0 9% 0;
+  margin: 0 0 160px 0;
 }
 
 .btn-copy {
+  visibility: hidden;
   color: #0a3871;
   position: absolute;
   width: 336px;
