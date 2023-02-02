@@ -15,25 +15,31 @@
   </head>
   <body>
     <header>
-      <img class="logo logo-alura" src="images/logo-alura.png" alt="Alura's logo" />
-      <img class="logo logo-safe" src="images/safe-cryptor-logo-blue.png" alt="">
+      <img
+        class="logo logo-alura"
+        src="images/logo-alura.png"
+        alt="Alura's logo"
+      />
+      <img
+        class="logo logo-safe"
+        src="images/safe-cryptor-logo-blue.png"
+        alt=""
+      />
     </header>
     <main>
       <section class="text-input">
-        <textarea
-          class="text-area"
-          cols="41"
-          rows="4"
-          placeholder="Enter your text"
-        ></textarea>
-        <div class="information">
-          <p>Only lowercase and without accent</p>
-        </div>
+          <textarea
+            class="text-area"
+            cols="41"
+            rows="4"
+            placeholder="Enter your text"
+          ></textarea>
+          <span class="information">Only lowercase and without accent</span>
         <div class="buttons">
-          <button class="btn-encrypt" onclick="btnDecrypter('encrypt')">
+          <button class="btn-encrypt" onclick="btnDecryptor('encrypt')">
             Encrypt
           </button>
-          <button class="btn-decrypt" onclick="btnDecrypter('decrypt')">
+          <button class="btn-decrypt" onclick="btnDecryptor('decrypt')">
             Decrypt
           </button>
         </div>
