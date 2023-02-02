@@ -11,14 +11,15 @@ let codeArray = [
 ];
 
 function btnDecryptor(rule) {
-  hideOutputInfo();
+  outputInfoVisibility();
   const textString = decryptor(rule, textArea.value);
   message.value = textString;
   textArea.value = "";
 }
 
-function hideOutputInfo() {
+function outputInfoVisibility() {
   document.getElementById("text-image").style.backgroundImage = "none";
+  document.getElementById("btn-copy").style.visibility = "visible";
   for (let el of preOutput) el.style.visibility = "hidden";
 }
 
