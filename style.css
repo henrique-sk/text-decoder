@@ -49,6 +49,7 @@ textarea {
 }
 
 .text-area {
+  font-size: 32px;
   border: none;
   color: #0a3871;
   margin: 90px 0 0;
@@ -107,14 +108,16 @@ textarea {
   grid-column: 10 / 14;
   display: flex;
   justify-content: center;
-  align-items: top;
   margin: 40px 0 40px 0;
 }
 
 .message {
   background: #ffffff;
+  padding: 25px 25px 105px 25px;
+  font-size: 24px;
+  color: #495057;
   background-image: url(images/dummy.png);
-  background-position: 50% 10%;
+  background-position: 50% 30%;
   background-repeat: no-repeat;
   border-radius: 24px;
   width: 400px;
@@ -126,26 +129,31 @@ textarea {
 
 .text-output span {
   background-color: transparent;
+  align-self: top;
   position: absolute;
+  text-align: center;
   width: 336px;
-  color: #495057;
+  
 }
 
 .text-output :nth-child(2) {
-  font-size: 18px;
+  font-size: 26px;
+  font-weight: bolder;
   align-self: flex-end;
-  margin: 0 0 125px 0;
+  margin: 0 0 170px 0;
+  color: #343A40
 }
 
 .text-output :nth-child(3) {
   font-size: 18px;
   align-self: flex-end;
-  margin: 0 0 160px 0;
+  margin: 0 0 110px 0;
+  color: #495057
 }
 
 .btn-copy {
   visibility: hidden;
-  color: #0a3871;
+  background-color: #ffffff;
   position: absolute;
   width: 336px;
   align-self: flex-end;
