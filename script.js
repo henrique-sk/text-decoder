@@ -10,19 +10,20 @@ let codeArray = [
   ["u", "ufat"],
 ];
 
-function btnDecrypter(rule) {
-  hideOutputInfo();
-  const textString = decrypter(rule, textArea.value);
+function btnDecryptor(rule) {
+  outputInfoVisibility();
+  const textString = decryptor(rule, textArea.value);
   message.value = textString;
   textArea.value = "";
 }
 
-function hideOutputInfo() {
+function outputInfoVisibility() {
   document.getElementById("text-image").style.backgroundImage = "none";
+  document.getElementById("btn-copy").style.visibility = "visible";
   for (let el of preOutput) el.style.visibility = "hidden";
 }
 
-function decrypter(rule, textString) {
+function decryptor(rule, textString) {
   let ruleColumn = whichColumn(rule);
   textString = textString.toLowerCase();
   for (let i = 0; i < codeArray.length; i++) {

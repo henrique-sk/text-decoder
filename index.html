@@ -7,41 +7,66 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Text Decoder</title>
   </head>
   <body>
     <header>
-      <img class="logo-alura" src="images/logo-alura.png" alt="Alura's logo" />
+      <img
+        class="logo logo-alura"
+        src="images/logo-alura.png"
+        alt="Alura's logo"
+      />
+      <img
+        class="logo logo-safe"
+        src="images/safe-cryptor-logo-blue.png"
+        alt=""
+      />
     </header>
     <main>
       <section class="text-input">
-        <textarea
-          class="text-area"
-          cols="41"
-          rows="4"
-          placeholder="Enter your text"
-        ></textarea>
-        <div class="information">
-          <p>Only lowercase and without accent</p>
-        </div>
+          <textarea
+            class="text-area"
+            cols="41"
+            rows="4"
+            placeholder="Enter your text"
+          ></textarea>
+          <span class="information">Only lowercase and without accent</span>
         <div class="buttons">
-          <button class="btn-encrypt" onclick="btnDecrypter('encrypt')">
+          <button class="btn-encrypt" onclick="btnDecryptor('encrypt')">
             Encrypt
           </button>
-          <button class="btn-decrypt" onclick="btnDecrypter('decrypt')">
+          <button class="btn-decrypt" onclick="btnDecryptor('decrypt')">
             Decrypt
           </button>
         </div>
       </section>
       <section class="text-output">
-          <textarea id="text-image" class="message" cols="20" rows="10"></textarea>
-          <span class="pre-output">No message found</span>
-          <span class="pre-output">Enter a text that you want to encrypt or decrypt in the left field.</span>
-          <button class="btn-copy" onclick="copyOutput()">Copy</button>
+        <textarea
+          id="text-image"
+          class="message"
+          cols="20"
+          rows="10"
+        ></textarea>
+        <span class="pre-output">No message found</span>
+        <span class="pre-output"
+          >Enter a text that you want to encrypt or decrypt in the left
+          field.</span
+        >
+        <button id="btn-copy" class="btn-copy" onclick="copyOutput()">Copy</button>
       </section>
     </main>
     <footer>
       <span>Developed by Henrique SK</span>
+      <a href="https://www.linkedin.com/in/henrique-schilling-klein/">
+        <img src="images/linkedinIcon.png" alt="" />
+      </a>
+      <a href="https://github.com/henrique-sk">
+        <img src="images/GithubIcon.png" alt="" />
+      </a>
     </footer>
     <script src="script.js"></script>
   </body>
