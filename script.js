@@ -10,9 +10,9 @@ let codeArray = [
   ["u", "ufat"],
 ];
 
-function btnDecrypter(rule) {
+function btnDecryptor(rule) {
   hideOutputInfo();
-  const textString = decrypter(rule, textArea.value);
+  const textString = decryptor(rule, textArea.value);
   message.value = textString;
   textArea.value = "";
 }
@@ -22,7 +22,7 @@ function hideOutputInfo() {
   for (let el of preOutput) el.style.visibility = "hidden";
 }
 
-function decrypter(rule, textString) {
+function decryptor(rule, textString) {
   let ruleColumn = whichColumn(rule);
   textString = textString.toLowerCase();
   for (let i = 0; i < codeArray.length; i++) {
