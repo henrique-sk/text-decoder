@@ -140,14 +140,14 @@ textarea {
   font-size: 26px;
   font-weight: bolder;
   align-self: flex-end;
-  margin: 0 0 170px 0;
+  height: 160px;
   color: #343A40
 }
 
 .text-output :nth-child(3) {
   font-size: 18px;
   align-self: flex-end;
-  margin: 0 0 110px 0;
+  margin: 0 0 70px 0;
   color: #495057
 }
 
@@ -164,7 +164,7 @@ footer {
   display: flex;
   color: #ffffff;
   background-color: #0a3871;
-  padding: 10px 0;
+  height: 50px;
   justify-content: center;
   align-items: center;
 }
